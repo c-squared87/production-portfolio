@@ -98,6 +98,7 @@ body {
     left: -100px;
     top: 0;
     max-height: 400px;
+    min-height: 200px;
 }
 
 .links {
