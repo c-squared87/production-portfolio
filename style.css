@@ -94,11 +94,11 @@ body {
     position: relative;
     grid-column: 1/5;
     padding: 20px 10px;
-    height: 100px;
 }
 
 .about-text .button {
     position: absolute;
+    /*look this up ^^^^^*/
     bottom: 0;
     border: 1px solid black;
     border-radius: 10px;
@@ -109,13 +109,19 @@ body {
     padding: 5px;
 }
 
-#about .button:hover {
+.about-text .button:hover {
     background-color: var(--primary);
     color: var(--secondary);
 }
 
+.about-image img {
+    position: relative;
+    left: -100px;
+    max-height: 400px;
+}
+
 #records {
-    background-color: black;
+    background: linear-gradient(darkgrey, black);
 }
 
 #records h3 {
@@ -124,11 +130,17 @@ body {
 }
 
 .record {
-    grid-column: 1/9;
+    grid-column: 2/8;
 }
 
 .record img {
     width: 80%;
+    padding: 0 10%;
+    align-self: center;
+}
+
+.record h4 {
+    text-align: center;
 }
 
 
