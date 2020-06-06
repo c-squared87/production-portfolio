@@ -80,6 +80,19 @@ body {
     box-sizing: border-box;
 }
 
+.links {
+    display: none;
+}
+
+.site-nav {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    height: 280px;
+    background-image: url(assets/cover_1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .site-nav h1 {
     position: absolute;
     top: 0;
@@ -88,8 +101,7 @@ body {
 .site-nav h3 {
     position: absolute;
     top: 70px;
-    /* background: var(--primary); */
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     border-bottom: 3px solid red;
 }
 
@@ -100,10 +112,6 @@ body {
     max-height: 400px;
 }
 
-.links {
-    display: none;
-}
-
 .about-text {
     grid-column: 3/7;
     padding: 20px 10px;
@@ -112,7 +120,6 @@ body {
 
 .about-text .button {
     position: absolute;
-    /*look this up ^^^^^*/
     bottom: 0;
     border: 1px solid black;
     border-radius: 10px;
@@ -128,14 +135,6 @@ body {
     color: var(--secondary);
 }
 
-
-/* 
-.about-image img {
-    position: relative;
-    left: -100px;
-    max-height: 400px;
-} */
-
 #records {
     background: linear-gradient(darkgrey, black);
 }
@@ -145,8 +144,12 @@ body {
     padding: 20px 0;
 }
 
-.record {
-    grid-column: 2/8;
+.record:nth-child(odd) {
+    grid-column: 1/7;
+}
+
+.record:nth-child(even) {
+    grid-column: 3/9;
 }
 
 .record img {
@@ -156,7 +159,7 @@ body {
 }
 
 .record h4 {
-    text-align: center;
+    text-align: left;
 }
 
 
