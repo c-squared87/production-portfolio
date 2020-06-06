@@ -1,7 +1,7 @@
 /* VARIABLES  */
 
 :root {
-    --primary: grey;
+    --primary: rgb(0, 51, 98);
     --secondary: white;
 }
 
@@ -80,10 +80,24 @@ body {
     box-sizing: border-box;
 }
 
+.site-nav h1 {
+    position: absolute;
+    top: 0;
+}
+
 .site-nav h3 {
-    background: var(--primary);
+    position: absolute;
+    top: 70px;
+    /* background: var(--primary); */
     padding-bottom: 30px;
     border-bottom: 3px solid red;
+}
+
+.site-nav img {
+    position: relative;
+    left: -100px;
+    top: 0;
+    max-height: 400px;
 }
 
 .links {
@@ -91,9 +105,9 @@ body {
 }
 
 .about-text {
-    position: relative;
-    grid-column: 1/5;
+    grid-column: 3/7;
     padding: 20px 10px;
+    text-align: center;
 }
 
 .about-text .button {
@@ -114,11 +128,13 @@ body {
     color: var(--secondary);
 }
 
+
+/* 
 .about-image img {
     position: relative;
     left: -100px;
     max-height: 400px;
-}
+} */
 
 #records {
     background: linear-gradient(darkgrey, black);
