@@ -75,13 +75,14 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
+    box-sizing: border-box;
 }
 
 .site-nav h3 {
     background: var(--primary);
-    padding: 30px 0;
+    padding-bottom: 30px;
     border-bottom: 3px solid red;
 }
 
@@ -89,12 +90,22 @@ body {
     display: none;
 }
 
-#about .button {
+.about-text {
+    position: relative;
+    grid-column: 1/5;
+    padding: 20px 10px;
+    height: 100px;
+}
+
+.about-text .button {
+    position: absolute;
+    bottom: 0;
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
     background-color: var(--secondary);
     color: black;
+    margin: 10px 0;
     padding: 5px;
 }
 
@@ -103,7 +114,22 @@ body {
     color: var(--secondary);
 }
 
-#records {}
+#records {
+    background-color: black;
+}
+
+#records h3 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.record {
+    grid-column: 1/9;
+}
+
+.record img {
+    width: 80%;
+}
 
 
 /* SMALL TABLET  */
