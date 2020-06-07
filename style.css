@@ -39,6 +39,11 @@ li {
     src: url("assets/Rubik-Regular.ttf") format("ttf");
 }
 
+.section-header {
+    text-align: center;
+    padding: 35px 0;
+}
+
 h1 {
     font-size: 2.2em;
 }
@@ -48,9 +53,14 @@ h3 {
     font-size: 1.4em;
 }
 
-h4,
-h5 {
+h4 {
     font-size: 1.1em;
+}
+
+h5 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1em;
 }
 
 p {
@@ -63,6 +73,7 @@ h3,
 h4,
 h5,
 p {
+    margin: 0;
     color: var(--secondary);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -92,10 +103,16 @@ body {
     width: 100%;
 }
 
+.site-nav {
+    height: 280px;
+    border-bottom: 3px solid black;
+}
+
 .site-nav h1 {
     position: absolute;
     top: 0;
     padding-left: 20px;
+    padding-top: 10px;
 }
 
 .site-nav h3 {
@@ -107,8 +124,9 @@ body {
 }
 
 #about {
-    position: relative;
-    top: 280px;
+    /* position: relative; */
+    /* top: 280px; */
+    background: linear-gradient(black, var(--primary));
 }
 
 .about-text {
@@ -118,53 +136,99 @@ body {
     border-bottom: 3px solid var(--accent);
 }
 
-
-/* 
-.about-text .button {
-    position: absolute;
-    bottom: 0;
+.button {
     border: 1px solid black;
     border-radius: 10px;
-    text-align: center;
-    background-color: var(--secondary);
-    color: black;
-    margin: 10px 0;
-    padding: 5px;
+}
+
+.about-image .button {
+    grid-row: 2;
 }
 
 .about-text .button:hover {
     background-color: var(--primary);
     color: var(--secondary);
-} */
+}
+
+.record-display {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    box-sizing: border-box;
+}
 
 #records {
-    background: linear-gradient(darkgrey, black);
+    background: linear-gradient(var(--primary), black);
+}
+
+.record img {
+    position: relative;
+    left: -10px;
+    width: 100%;
+    border: 10px solid black;
+    border-radius: 10px;
 }
 
 
 /* 
 #records h3 {
     text-align: center;
-    padding: 20px 0;
-}
+    padding: 35px 0;
+} */
 
-.record:nth-child(odd) {
-    grid-column: 1/7;
-}
-
-.record:nth-child(even) {
-    grid-column: 3/9;
-}
-
-.record img {
-    width: 80%;
-    padding: 0 10%;
+.record {
     align-self: center;
+    margin-bottom: 20px;
 }
 
 .record h4 {
-    text-align: left;
-} */
+    padding: 5px 0;
+}
+
+.record h5 {
+    padding: 5px 0;
+}
+
+.record p {
+    padding: 5px 0;
+}
+
+.record:nth-child(odd) {
+    grid-column: 2/4;
+}
+
+.record:nth-child(even) {
+    grid-column: 5/7;
+}
+
+.record h4,
+h5,
+p {
+    text-align: center;
+}
+
+#gallery {
+    background-color: black;
+}
+
+#gallery .section-header {
+    border-top: 3px solid red;
+}
+
+.image {
+    grid-column: 2/8;
+}
+
+.image img {
+    position: relative;
+    width: 80%;
+    padding: 0 10%;
+    margin-bottom: 20px;
+}
+
+.image h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 
 /* SMALL TABLET  */
