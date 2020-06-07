@@ -1,8 +1,9 @@
 /* VARIABLES  */
 
 :root {
-    --primary: rgb(0, 51, 98);
+    --primary: rgb(0, 25, 49);
     --secondary: white;
+    --accent: red;
 }
 
 
@@ -35,11 +36,11 @@ li {
 
 @font-face {
     font-family: 'Rubik Regular';
-    src: url("assets/Rubik-Regular.ttf") format("ttf"),
+    src: url("assets/Rubik-Regular.ttf") format("ttf");
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.2em;
 }
 
 h2,
@@ -62,7 +63,8 @@ h3,
 h4,
 h5,
 p {
-    color: var(--secondary)
+    color: var(--secondary);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -90,36 +92,31 @@ body {
     width: 100%;
 }
 
-
-/* .site-nav h1 {
+.site-nav h1 {
     position: absolute;
     top: 0;
-} */
+    padding-left: 20px;
+}
 
-
-/* .site-nav h3 {
+.site-nav h3 {
     position: absolute;
-    top: 70px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid red;
-} */
+    top: 60px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-bottom: 3px solid var(--accent);
+}
 
-
-/* 
-.site-nav img {
+#about {
     position: relative;
-    left: -100px;
-    top: 0;
-    max-height: 400px;
-} */
+    top: 280px;
+}
 
-
-/* 
 .about-text {
     grid-column: 3/7;
     padding: 20px 10px;
     text-align: center;
-} */
+    border-bottom: 3px solid var(--accent);
+}
 
 
 /* 
@@ -140,12 +137,12 @@ body {
     color: var(--secondary);
 } */
 
-
-/* 
 #records {
     background: linear-gradient(darkgrey, black);
 }
 
+
+/* 
 #records h3 {
     text-align: center;
     padding: 20px 0;
