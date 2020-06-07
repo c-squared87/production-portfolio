@@ -84,40 +84,45 @@ body {
     display: none;
 }
 
-.site-nav {
-    border-top: 10px solid black;
-    border-bottom: 10px solid black;
-    height: 280px;
-    background-image: url(assets/cover_1.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.site-nav h1 {
+.about-image {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 
-.site-nav h3 {
+
+/* .site-nav h1 {
+    position: absolute;
+    top: 0;
+} */
+
+
+/* .site-nav h3 {
     position: absolute;
     top: 70px;
     padding-bottom: 15px;
     border-bottom: 3px solid red;
-}
+} */
 
+
+/* 
 .site-nav img {
     position: relative;
     left: -100px;
     top: 0;
     max-height: 400px;
-}
+} */
 
+
+/* 
 .about-text {
     grid-column: 3/7;
     padding: 20px 10px;
     text-align: center;
-}
+} */
 
+
+/* 
 .about-text .button {
     position: absolute;
     bottom: 0;
@@ -133,8 +138,10 @@ body {
 .about-text .button:hover {
     background-color: var(--primary);
     color: var(--secondary);
-}
+} */
 
+
+/* 
 #records {
     background: linear-gradient(darkgrey, black);
 }
@@ -160,7 +167,7 @@ body {
 
 .record h4 {
     text-align: left;
-}
+} */
 
 
 /* SMALL TABLET  */
