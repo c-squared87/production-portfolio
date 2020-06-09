@@ -34,8 +34,6 @@ li {
 
 /* FONTS  */
 
-@font-face {}
-
 .section-header {
     text-align: center;
     padding: 35px 0;
@@ -132,7 +130,6 @@ body {
 }
 
 #about {
-    /* background: linear-gradient(black, var(--primary)); */
     background-color: black;
 }
 
@@ -142,8 +139,7 @@ body {
 
 .about-text {
     grid-column: 2/8;
-    margin-top: 18px;
-    padding: 20px 10px;
+    padding: 40px 10px;
     text-align: center;
     border-bottom: 3px solid var(--accent);
 }
@@ -169,9 +165,7 @@ body {
 }
 
 #records {
-    /* background: linear-gradient(var(--primary), black); */
     background: linear-gradient(black, var(--primary));
-    /* margin-bottom: 30px; */
     padding-bottom: 30px;
 }
 
@@ -197,7 +191,6 @@ body {
 }
 
 .record p {
-    /* padding: 5px 0; */
     font-size: 0.9em;
 }
 
@@ -397,9 +390,8 @@ footer {
         font-size: 1em;
         padding: 15px 30px;
         border-bottom: 3px solid var(--accent);
-        /* background-color: black; */
     }
-    /* TODO MOVE THIS TO THE TOP? */
+    /* TODO MOVE LINKS STUFF TO THE TOP? */
     .links {
         display: flex;
         position: absolute;
