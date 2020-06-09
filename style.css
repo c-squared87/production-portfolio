@@ -162,6 +162,7 @@ body {
 
 #records {
     background: linear-gradient(black, var(--primary));
+    /* background: linear-gradient( var(--primary), black); */
     padding-bottom: 30px;
 }
 
@@ -206,6 +207,7 @@ p {
 
 #gallery {
     background-color: black;
+    background: linear-gradient( var(--primary), black);
 }
 
 #gallery .section-header {
