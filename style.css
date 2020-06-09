@@ -79,7 +79,7 @@ p {
 }
 
 ::placeholder {
-    color: lightgray;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -131,9 +131,8 @@ body {
 }
 
 #about {
-    /* position: relative; */
-    /* top: 280px; */
-    background: linear-gradient(black, var(--primary));
+    /* background: linear-gradient(black, var(--primary)); */
+    background-color: black;
 }
 
 #about h3 {
@@ -141,7 +140,7 @@ body {
 }
 
 .about-text {
-    grid-column: 3/7;
+    grid-column: 2/8;
     margin-top: 18px;
     padding: 20px 10px;
     text-align: center;
@@ -169,19 +168,21 @@ body {
 }
 
 #records {
-    background: linear-gradient(var(--primary), black);
+    /* background: linear-gradient(var(--primary), black); */
+    background: linear-gradient(black, var(--primary));
+    margin-bottom: 30px;
 }
 
 .record img {
     position: relative;
-    left: -10px;
+    left: -5px;
     width: 100%;
-    border: 10px solid black;
-    border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
 }
 
 .record {
-    align-self: center;
+    align-self: top;
     margin-bottom: 20px;
 }
 
@@ -278,7 +279,19 @@ textarea:focus {
 }
 
 #contact .button {
+    width: 40%;
     margin: 5px auto;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+#contact .button:hover {
+    width: 40%;
+    margin: 5px auto;
+    background: var(--primary);
+    color: white;
+    border: 1px solid white;
 }
 
 footer {
