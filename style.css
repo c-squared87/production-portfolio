@@ -117,16 +117,16 @@ body {
     position: absolute;
     top: 0;
     padding: 25px 20px;
-    background-color: black
+    font-size: 1.5em;
 }
 
 #site-nav h3 {
     position: absolute;
     top: 60px;
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 15px 20px;
     border-bottom: 3px solid var(--accent);
-    background-color: black;
+    /* background-color: black; */
 }
 
 #about {
@@ -135,6 +135,7 @@ body {
 
 #about h3 {
     grid-column: 2;
+    font-style: italic;
 }
 
 .about-text {
