@@ -140,23 +140,18 @@ body {
 
 .about-text {
     grid-column: 2/8;
-    padding: 40px 10px;
+    padding: 30px 10px;
     text-align: center;
     border-bottom: 3px solid var(--accent);
+}
+
+.about-text .header {
+    margin-bottom: 20px;
 }
 
 .button {
     border: 1px solid black;
     border-radius: 4px;
-}
-
-.about-image .button {
-    grid-row: 2;
-}
-
-.about-text .button:hover {
-    background-color: var(--primary);
-    color: var(--secondary);
 }
 
 .record-display {
