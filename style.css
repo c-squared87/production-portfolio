@@ -86,7 +86,7 @@ p {
 /* MOBILE STYLING  */
 
 body {
-    background: var(--primary);
+    background: black;
     overflow-x: hidden;
 }
 
@@ -104,21 +104,23 @@ body {
 .about-image {
     position: relative;
     top: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: auto;
-    /* display: none; */
+    max-width: 960px;
+    max-height: 540px;
 }
 
 #site-nav {
     height: auto;
+    max-height: 540px;
     border-bottom: 3px solid black;
 }
 
 #site-nav h1 {
     position: absolute;
     top: 0;
-    /* padding-left: 20px; */
-    /* padding-top: 25px; */
     padding: 25px 20px;
     background-color: black
 }
@@ -128,7 +130,6 @@ body {
     top: 60px;
     font-size: 1em;
     padding: 15px 20px;
-    /* padding-left: 20px; */
     border-bottom: 3px solid var(--accent);
     background-color: black;
 }
@@ -306,6 +307,9 @@ footer {
 /* SMALL TABLET  */
 
 @media screen and (min-width: 620px) {
+    body {
+        font-size: 18px;
+    }
     #gallery {
         background-color: black;
     }
@@ -316,22 +320,18 @@ footer {
         margin-right: auto;
     }
     #gallery .grid .image:nth-child(1) {
-        /* border: 3px solid red; */
         grid-column: 2/5;
         grid-row: 1;
     }
     #gallery .grid .image:nth-child(2) {
-        /* border: 3px solid red; */
         grid-column: 5/8;
         grid-row: 1;
     }
     #gallery .grid .image:nth-child(3) {
-        /* border: 3px solid red; */
         grid-column: 2/5;
         grid-row: 2;
     }
     #gallery .grid .image:nth-child(4) {
-        /* border: 3px solid red; */
         grid-column: 5/8;
         grid-row: 2;
     }
@@ -351,15 +351,42 @@ footer {
 /* LARGE TABLET AND LAPTOP  */
 
 @media screen and (min-width: 940px) {
-    /* .links {
-        display: inline;
+    body {
+        font-size: 20px;
+    }
+    #site-nav h1 {
+        position: absolute;
+        top: 30px;
+        padding: 25px 30px;
+        background-color: black
+    }
+    #site-nav h3 {
+        position: absolute;
+        top: 90px;
+        font-size: 1em;
+        padding: 15px 30px;
+        border-bottom: 3px solid var(--accent);
+        /* background-color: black; */
     }
     .links {
-        position: relative;
-        color: white;
-        right: 0;
+        display: flex;
+        position: absolute;
         top: 0;
-    } */
+        right: 0;
+        background-color: black;
+        padding: 15px;
+    }
+    .links a {
+        margin: 10px 5px;
+        font-size: 0.9em;
+        padding: 5px;
+        color: var(--secondary);
+        border-bottom: 1px solid var(--accent);
+        border-right: 1px solid var(--accent);
+    }
+    .links a:hover {
+        background-color: var(--accent);
+    }
 }
 
 
